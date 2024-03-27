@@ -17,6 +17,7 @@
 
 namespace sage
 {
+
 Game::Game()
 {
     auto playerId = GameObjectFactory::createPlayer({20.0f, 0, 20.0f}, "Player");
@@ -44,11 +45,10 @@ Game::Game()
     // This should also be based on scene parameters
     GM.navigationGridSystem->Init(100, 1.0f);
     GM.navigationGridSystem->PopulateGrid();
-
 }
+
 Game::~Game()
 {
-
 }
 void Game::Update()
 {

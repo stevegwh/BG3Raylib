@@ -4,7 +4,7 @@
 
 #pragma once
 
-//#define EDITOR_MODE
+#define EDITOR_MODE
 
 #include "raylib.h"
 
@@ -13,9 +13,11 @@
 #include <unordered_map>
 
 // Misc
-#include "State.hpp"
+#include "Scene.hpp"
+#include "SceneManager.hpp"
 #include "Camera.hpp"
 #include "UserInput.hpp"
+
 
 // Systems
 #include "RenderSystem.hpp"
@@ -36,12 +38,12 @@ namespace sage
 static constexpr int SCREEN_WIDTH = 1280;
 static constexpr int SCREEN_HEIGHT = 720;
 
+
 class GameManager
 {
 
     std::unique_ptr<sage::UserInput> userInput;
     std::vector<Vector3> grid;
-    std::stack<std::unique_ptr<State>> states;
 
     void init();
     static void cleanup();
@@ -58,6 +60,7 @@ public:
     std::unique_ptr<sage::WorldSystem> worldSystem;
     std::unique_ptr<sage::NavigationGridSystem> navigationGridSystem;
     std::unique_ptr<sage::ActorMovementSystem> actorMovementSystem;
+    std::unique_ptr<sage::SceneManager> sceneManager;
     std::unique_ptr<sage::Camera> sCamera;
 
     static GameManager& GetInstance()

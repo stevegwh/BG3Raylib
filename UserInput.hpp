@@ -28,6 +28,7 @@ namespace sage
         void OnCreateKeyPressed() const;
         void OnGenGridKeyPressed() const;
         void OnSerializeKeyPressed() const;
+        void OnRunKeyPressed() const;
     public:
         std::unique_ptr<Event> OnClickEvent;
         std::unique_ptr<Event> OnCollisionHitEvent;
@@ -35,6 +36,7 @@ namespace sage
         std::unique_ptr<Event> OnCreateKeyPressedEvent;
         std::unique_ptr<Event> OnGenGridKeyPressedEvent;
         std::unique_ptr<Event> OnSerializeKeyPressedEvent;
+        std::unique_ptr<Event> OnRunKeyPressedEvent;
 
         RayCollision collision {0};
         CollisionInfo rayCollisionResultInfo;
@@ -48,7 +50,8 @@ namespace sage
         :
         OnClickEvent(std::make_unique<Event>()), OnCollisionHitEvent(std::make_unique<Event>()),
         OnDeleteKeyPressedEvent(std::make_unique<Event>()), OnCreateKeyPressedEvent(std::make_unique<Event>()),
-        OnGenGridKeyPressedEvent(std::make_unique<Event>()), OnSerializeKeyPressedEvent(std::make_unique<Event>())
+        OnGenGridKeyPressedEvent(std::make_unique<Event>()), OnSerializeKeyPressedEvent(std::make_unique<Event>()),
+        OnRunKeyPressedEvent(std::make_unique<Event>())
         {
         }
     };

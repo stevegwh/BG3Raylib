@@ -67,6 +67,14 @@ namespace sage
         {
             components.erase(entityId);
         }
+        
+        void ClearComponents()
+        {
+            for (const auto& c: components) 
+            {
+                Registry::GetInstance().DeleteEntity(c.first);
+            }
+        }
 
 //        {
 //            EntityID  -> { ComponentName -> { Field -> Value} }

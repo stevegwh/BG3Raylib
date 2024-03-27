@@ -70,12 +70,11 @@ add_executable(BG_Raylib
         GameObjectFactory.hpp
         Serializer.cpp
         Serializer.hpp
-        SceneSystem.cpp
-        SceneSystem.hpp
         Scene.hpp
-        State.hpp
         Game.cpp
         Game.hpp
+        SceneManager.cpp
+        SceneManager.hpp
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE raylib nlohmann_json::nlohmann_json)

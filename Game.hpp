@@ -5,12 +5,12 @@
 #pragma once
 
 
-#include "State.hpp"
+#include "Scene.hpp"
 
 namespace sage
 {
 
-class Game : public State
+class Game : public Scene
 {
 public:
     Game();

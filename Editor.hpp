@@ -7,7 +7,7 @@
 #include "UserInput.hpp"
 #include "EventCallback.hpp"
 #include "GameManager.hpp"
-#include "State.hpp"
+#include "Scene.hpp"
 
 #include <unordered_map>
 
@@ -23,20 +23,26 @@ enum EditorMode
 };
 
 // NB: "GameManager" is friend
-class Editor : public State
+class Editor : public Scene
 {
     EditorMode currentEditorMode = IDLE;
     UserInput* cursor;
     void OnCursorClick();
     void OnCollisionHit();
     void OnSerializeButton();
+    void OnDeleteModeKeyPressed();
+    void OnCreateModeKeyPressed();
+    void OnGenGridKeyPressed();
+    void OnRunKeyPressed();
     EntityID selectedObject{};
     void moveSelectedObjectToCursorHit();
+
+    std::vector<EntityID> entities;
     
     std::unordered_map<std::string, std::shared_ptr<EventCallback>> eventCallbacks;
     
 public:
-    explicit Editor(UserInput* _cursor);
+    Editor();
     ~Editor() override;
     void Update() override;
     void Draw3D() override;
@@ -51,9 +57,7 @@ public:
 
     // Store the majority of functionality in "cursor" in this class, as it will be used for editing the map.
 
-    void OnDeleteModeKeyPressed();
-    void OnCreateModeKeyPressed();
-    void OnGenGridKeyPressed();
+
 };
 
 }

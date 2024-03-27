@@ -14,11 +14,12 @@ namespace sage
 {
 GameManager::GameManager() :
 sCamera(std::make_unique<sage::Camera>()),
+userInput(std::make_unique<sage::UserInput>()),
 renderSystem(std::make_unique<RenderSystem>()),
 collisionSystem(std::make_unique<sage::CollisionSystem>()),
 transformSystem(std::make_unique<sage::TransformSystem>()),
-userInput(std::make_unique<sage::UserInput>()),
-navigationGridSystem(std::make_unique<NavigationGridSystem>())
+navigationGridSystem(std::make_unique<NavigationGridSystem>()),
+sceneManager(std::make_unique<SceneManager>())
 {
     EntityID rootNodeId = Registry::GetInstance().CreateEntity();
     auto rootNodeObject = std::make_unique<WorldObject>(rootNodeId);
@@ -44,9 +45,11 @@ void GameManager::init()
     // Should each state have its own set of systems?
     // Or, should the destructor just make sure to delete all its entities from the systems?
 #ifdef EDITOR_MODE
-    states.push(std::make_unique<sage::Editor>(userInput.get()));
+    sceneManager->BufferSceneChange(1);
+    sceneManager->TriggerSceneChange();
 #else
-    states.push(std::make_unique<sage::Game>());
+    sceneManager->BufferSceneChange(0);
+    sceneManager->TriggerSceneChange();
 #endif
 
 }
@@ -64,25 +67,26 @@ void GameManager::DeserializeMap()
         for (const auto& entityIdEntry : data.value())
         {
             //const std::string& entityId = entityIdEntry.first;
-            auto newId = std::to_string(Registry::GetInstance().CreateEntity());
+            auto id = Registry::GetInstance().CreateEntity();
+            auto idString = std::to_string(id);
             const auto& componentMap = entityIdEntry.second;
 
             if (componentMap.find(transformSystem->getComponentName()) != componentMap.end())
             {
                 const auto& transformComponent = componentMap.at(transformSystem->getComponentName());
-                transformSystem->DeserializeComponents(newId, transformComponent);
+                transformSystem->DeserializeComponents(idString, transformComponent);
             }
 
             if (componentMap.find(renderSystem->getComponentName()) != componentMap.end())
             {
                 const auto& renderableComponent = componentMap.at(renderSystem->getComponentName());
-                renderSystem->DeserializeComponents(newId, renderableComponent);
+                renderSystem->DeserializeComponents(idString, renderableComponent);
             }
 
             if (componentMap.find(collisionSystem->getComponentName()) != componentMap.end())
             {
                 const auto& collideableComponent = componentMap.at(collisionSystem->getComponentName());
-                collisionSystem->DeserializeComponents(newId, collideableComponent);
+                collisionSystem->DeserializeComponents(idString, collideableComponent);
             }
         }
     }
@@ -112,12 +116,12 @@ void GameManager::Update()
         sCamera->Update();
         userInput->ListenForInput();
 
-        states.top()->Update();
+        sceneManager->head->Update();
 
         //----------------------------------------------------------------------------------
         draw();
         Registry::GetInstance().RunMaintainance();
-        
+        sceneManager->TriggerSceneChange();
     }
 }
 
@@ -133,14 +137,14 @@ void GameManager::draw()
 
     // If we hit something, draw the cursor at the hit point
     userInput->Draw();
-    
-    states.top()->Draw3D();
+
+    sceneManager->head->Draw3D();
 
     EndMode3D();
 
     userInput->DrawDebugText();
-    
-    states.top()->Draw2D();
+
+    sceneManager->head->Draw2D();
 
     DrawFPS(10, 10);
 

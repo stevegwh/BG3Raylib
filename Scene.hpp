@@ -4,16 +4,19 @@
 
 #pragma once
 
-#include "Component.hpp"
-
+#include <vector>
+#include "Entity.hpp"
 
 namespace sage
 {
-    struct Scene : public Component<Scene>
-    {
-        void SerializeImpl()
-        {
-            
-        }
-    };
-}
+
+class Scene
+{
+public:
+    virtual ~Scene() = default;
+    virtual void Update() = 0;
+    virtual void Draw3D() = 0;
+    virtual void Draw2D() = 0;
+};
+
+} // sage

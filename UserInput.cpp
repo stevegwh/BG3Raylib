@@ -69,6 +69,11 @@ namespace sage
     {
         OnSerializeKeyPressedEvent->InvokeAllCallbacks();
     }
+    
+    void UserInput::OnRunKeyPressed() const
+    {
+        OnRunKeyPressedEvent->InvokeAllCallbacks();
+    }
 
     void UserInput::Draw()
     {
@@ -162,6 +167,10 @@ namespace sage
         else if (IsKeyPressed(KEY_Z))
         {
             OnSerializeKeyPressed();
+        }
+        else if (IsKeyPressed(KEY_R))
+        {
+            OnRunKeyPressed();
         }
 
     }

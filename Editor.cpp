@@ -13,8 +13,9 @@
 
 namespace sage
 {
-    Editor::Editor(UserInput* _cursor) : cursor(_cursor)
+    Editor::Editor()
     {
+        cursor = GM.userInput.get();
         const std::function<void()> f1 = [p = this] { p->OnCursorClick(); };
         auto e1 = std::make_shared<EventCallback>(f1);
         cursor->OnClickEvent->Subscribe(e1);
@@ -45,6 +46,11 @@ namespace sage
         cursor->OnSerializeKeyPressedEvent->Subscribe(e6);
         eventCallbacks["OnSerializeButton"] = e6;
 
+        const std::function<void()> f7 = [p = this] { p->OnRunKeyPressed(); };
+        auto e7 = std::make_shared<EventCallback>(f7);
+        cursor->OnRunKeyPressedEvent->Subscribe(e7);
+        eventCallbacks["OnRunKeyPressed"] = e7;
+
         EntityID floor = Registry::GetInstance().CreateEntity();
         Vector3 g0 = (Vector3){ -50.0f, 0.1f, -50.0f };
         Vector3 g2 = (Vector3){  50.0f, 0.1f,  50.0f };
@@ -68,12 +74,18 @@ namespace sage
     Editor::~Editor()
     {
         // Unsubscribe from all events
-        cursor->OnClickEvent->Unsubscribe(eventCallbacks.at("OnClick"));
+        cursor->OnClickEvent->Unsubscribe(eventCallbacks.at("OnCursorClick"));
         cursor->OnCollisionHitEvent->Unsubscribe(eventCallbacks.at("OnCollisionHit"));
         cursor->OnDeleteKeyPressedEvent->Unsubscribe(eventCallbacks.at("OnDeleteModeKeyPressed"));
         cursor->OnCreateKeyPressedEvent->Unsubscribe(eventCallbacks.at("OnCreateModeKeyPressed"));
         cursor->OnGenGridKeyPressedEvent->Unsubscribe(eventCallbacks.at("OnGenGridKeyPressed"));
         cursor->OnSerializeKeyPressedEvent->Unsubscribe(eventCallbacks.at("OnSerializeButton"));
+        cursor->OnRunKeyPressedEvent->Unsubscribe(eventCallbacks.at("OnRunKeyPressed"));
+        
+        GM.transformSystem->ClearComponents();
+        GM.renderSystem->ClearComponents();
+        GM.collisionSystem->ClearComponents();
+        GM.navigationGridSystem->ClearComponents();
     }
     
     
@@ -119,6 +131,11 @@ namespace sage
         {
             selectedObject = 0;
         }
+    }
+    
+    void Editor::OnRunKeyPressed()
+    {
+        GM.sceneManager->BufferSceneChange(0);
     }
     
     void Editor::OnSerializeButton()
