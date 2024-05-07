@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cereal>
 	<entity>
-		<value0>10008</value0>
+		<value0>40011</value0>
 	</entity>
 	<transform>
-		<position.x>-23.423145294189453</position.x>
-		<position.y>0.09999847412109375</position.y>
-		<position.z>-24.814151763916016</position.z>
+		<position.x>-36.67034912109375</position.x>
+		<position.y>0.0999908447265625</position.y>
+		<position.z>44.001148223876953</position.z>
 		<rotation.x>0</rotation.x>
 		<rotation.y>0</rotation.y>
 		<rotation.z>0</rotation.z>
@@ -19,12 +19,12 @@
 		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
 		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
 		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
-		<worldBoundingBox.min.x>-27.612846374511719</worldBoundingBox.min.x>
-		<worldBoundingBox.min.y>0.09999847412109375</worldBoundingBox.min.y>
-		<worldBoundingBox.min.z>-28.748052597045898</worldBoundingBox.min.z>
-		<worldBoundingBox.max.x>-19.233444213867188</worldBoundingBox.max.x>
-		<worldBoundingBox.max.y>23.674999237060547</worldBoundingBox.max.y>
-		<worldBoundingBox.max.z>-20.880250930786133</worldBoundingBox.max.z>
+		<worldBoundingBox.min.x>-40.860050201416016</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.0999908447265625</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>40.067249298095703</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-32.480648040771484</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.674991607666016</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>47.935047149658203</worldBoundingBox.max.z>
 		<collisionLayer>2</collisionLayer>
 	</collideable>
 	<renderable>
@@ -49,12 +49,12 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>10007</value0>
+		<value0>40010</value0>
 	</entity>
 	<transform>
-		<position.x>-25.226413726806641</position.x>
-		<position.y>0.09999847412109375</position.y>
-		<position.z>21.626197814941406</position.z>
+		<position.x>-24.230865478515625</position.x>
+		<position.y>0.100006103515625</position.y>
+		<position.z>91.15380859375</position.z>
 		<rotation.x>0</rotation.x>
 		<rotation.y>0</rotation.y>
 		<rotation.z>0</rotation.z>
@@ -67,12 +67,12 @@
 		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
 		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
 		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
-		<worldBoundingBox.min.x>-29.416114807128906</worldBoundingBox.min.x>
-		<worldBoundingBox.min.y>0.09999847412109375</worldBoundingBox.min.y>
-		<worldBoundingBox.min.z>17.692296981811523</worldBoundingBox.min.z>
-		<worldBoundingBox.max.x>-21.036712646484375</worldBoundingBox.max.x>
-		<worldBoundingBox.max.y>23.674999237060547</worldBoundingBox.max.y>
-		<worldBoundingBox.max.z>25.560098648071289</worldBoundingBox.max.z>
+		<worldBoundingBox.min.x>-28.420566558837891</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.100006103515625</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>87.21990966796875</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-20.041164398193359</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.675006866455078</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>95.08770751953125</worldBoundingBox.max.z>
 		<collisionLayer>2</collisionLayer>
 	</collideable>
 	<renderable>
@@ -97,7 +97,103 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>10006</value0>
+		<value0>40009</value0>
+	</entity>
+	<transform>
+		<position.x>-60.874801635742188</position.x>
+		<position.y>0.100006103515625</position.y>
+		<position.z>5.9813137054443359</position.z>
+		<rotation.x>0</rotation.x>
+		<rotation.y>0</rotation.y>
+		<rotation.z>0</rotation.z>
+		<scale>1</scale>
+	</transform>
+	<collideable>
+		<localBoundingBox.min.x>-4.1897001266479492</localBoundingBox.min.x>
+		<localBoundingBox.min.y>0</localBoundingBox.min.y>
+		<localBoundingBox.min.z>-3.9339001178741455</localBoundingBox.min.z>
+		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
+		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
+		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
+		<worldBoundingBox.min.x>-65.064498901367188</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.100006103515625</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>2.0474135875701904</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-56.685100555419922</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.675006866455078</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>9.9152135848999023</worldBoundingBox.max.z>
+		<collisionLayer>2</collisionLayer>
+	</collideable>
+	<renderable>
+		<modelPath>resources/models/obj/turret.obj</modelPath>
+		<material.path>resources/models/obj/turret_diffuse.png</material.path>
+		<name>Tower Instance</name>
+		<initialTransform.m0>1</initialTransform.m0>
+		<initialTransform.m1>0</initialTransform.m1>
+		<initialTransform.m2>0</initialTransform.m2>
+		<initialTransform.m3>0</initialTransform.m3>
+		<initialTransform.m4>0</initialTransform.m4>
+		<initialTransform.m5>1</initialTransform.m5>
+		<initialTransform.m6>0</initialTransform.m6>
+		<initialTransform.m7>0</initialTransform.m7>
+		<initialTransform.m8>0</initialTransform.m8>
+		<initialTransform.m9>0</initialTransform.m9>
+		<initialTransform.m10>1</initialTransform.m10>
+		<initialTransform.m11>0</initialTransform.m11>
+		<initialTransform.m12>0</initialTransform.m12>
+		<initialTransform.m13>0</initialTransform.m13>
+		<initialTransform.m14>0</initialTransform.m14>
+		<initialTransform.m15>1</initialTransform.m15>
+	</renderable>
+	<entity>
+		<value0>8</value0>
+	</entity>
+	<transform>
+		<position.x>1.2880210876464844</position.x>
+		<position.y>0.100006103515625</position.y>
+		<position.z>-34.742427825927734</position.z>
+		<rotation.x>0</rotation.x>
+		<rotation.y>0</rotation.y>
+		<rotation.z>0</rotation.z>
+		<scale>1</scale>
+	</transform>
+	<collideable>
+		<localBoundingBox.min.x>-4.1897001266479492</localBoundingBox.min.x>
+		<localBoundingBox.min.y>0</localBoundingBox.min.y>
+		<localBoundingBox.min.z>-3.9339001178741455</localBoundingBox.min.z>
+		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
+		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
+		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
+		<worldBoundingBox.min.x>-2.9016790390014648</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.100006103515625</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>-38.676326751708984</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>5.4777212142944336</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.675006866455078</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>-30.808526992797852</worldBoundingBox.max.z>
+		<collisionLayer>2</collisionLayer>
+	</collideable>
+	<renderable>
+		<modelPath>resources/models/obj/turret.obj</modelPath>
+		<material.path>resources/models/obj/turret_diffuse.png</material.path>
+		<name>Tower Instance</name>
+		<initialTransform.m0>1</initialTransform.m0>
+		<initialTransform.m1>0</initialTransform.m1>
+		<initialTransform.m2>0</initialTransform.m2>
+		<initialTransform.m3>0</initialTransform.m3>
+		<initialTransform.m4>0</initialTransform.m4>
+		<initialTransform.m5>1</initialTransform.m5>
+		<initialTransform.m6>0</initialTransform.m6>
+		<initialTransform.m7>0</initialTransform.m7>
+		<initialTransform.m8>0</initialTransform.m8>
+		<initialTransform.m9>0</initialTransform.m9>
+		<initialTransform.m10>1</initialTransform.m10>
+		<initialTransform.m11>0</initialTransform.m11>
+		<initialTransform.m12>0</initialTransform.m12>
+		<initialTransform.m13>0</initialTransform.m13>
+		<initialTransform.m14>0</initialTransform.m14>
+		<initialTransform.m15>1</initialTransform.m15>
+	</renderable>
+	<entity>
+		<value0>7</value0>
 	</entity>
 	<transform>
 		<position.x>2.0857734680175781</position.x>
@@ -145,12 +241,12 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>10005</value0>
+		<value0>6</value0>
 	</entity>
 	<transform>
-		<position.x>19.885217666625977</position.x>
-		<position.y>0.09999847412109375</position.y>
-		<position.z>11.246210098266602</position.z>
+		<position.x>-70.46014404296875</position.x>
+		<position.y>0.100006103515625</position.y>
+		<position.z>53.378807067871094</position.z>
 		<rotation.x>0</rotation.x>
 		<rotation.y>0</rotation.y>
 		<rotation.z>0</rotation.z>
@@ -163,12 +259,12 @@
 		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
 		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
 		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
-		<worldBoundingBox.min.x>15.695517539978027</worldBoundingBox.min.x>
-		<worldBoundingBox.min.y>0.09999847412109375</worldBoundingBox.min.y>
-		<worldBoundingBox.min.z>7.3123102188110352</worldBoundingBox.min.z>
-		<worldBoundingBox.max.x>24.074916839599609</worldBoundingBox.max.x>
-		<worldBoundingBox.max.y>23.674999237060547</worldBoundingBox.max.y>
-		<worldBoundingBox.max.z>15.180109977722168</worldBoundingBox.max.z>
+		<worldBoundingBox.min.x>-74.64984130859375</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.100006103515625</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>49.444908142089844</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-66.27044677734375</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.675006866455078</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>57.312705993652344</worldBoundingBox.max.z>
 		<collisionLayer>2</collisionLayer>
 	</collideable>
 	<renderable>
@@ -193,7 +289,7 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>4</value0>
+		<value0>5</value0>
 	</entity>
 	<transform>
 		<position.x>20.772815704345703</position.x>
@@ -241,12 +337,12 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>3</value0>
+		<value0>4</value0>
 	</entity>
 	<transform>
-		<position.x>-25.226413726806641</position.x>
+		<position.x>19.885217666625977</position.x>
 		<position.y>0.09999847412109375</position.y>
-		<position.z>21.626197814941406</position.z>
+		<position.z>11.246210098266602</position.z>
 		<rotation.x>0</rotation.x>
 		<rotation.y>0</rotation.y>
 		<rotation.z>0</rotation.z>
@@ -259,12 +355,12 @@
 		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
 		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
 		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
-		<worldBoundingBox.min.x>-29.416114807128906</worldBoundingBox.min.x>
+		<worldBoundingBox.min.x>15.695517539978027</worldBoundingBox.min.x>
 		<worldBoundingBox.min.y>0.09999847412109375</worldBoundingBox.min.y>
-		<worldBoundingBox.min.z>17.692296981811523</worldBoundingBox.min.z>
-		<worldBoundingBox.max.x>-21.036712646484375</worldBoundingBox.max.x>
+		<worldBoundingBox.min.z>7.3123102188110352</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>24.074916839599609</worldBoundingBox.max.x>
 		<worldBoundingBox.max.y>23.674999237060547</worldBoundingBox.max.y>
-		<worldBoundingBox.max.z>25.560098648071289</worldBoundingBox.max.z>
+		<worldBoundingBox.max.z>15.180109977722168</worldBoundingBox.max.z>
 		<collisionLayer>2</collisionLayer>
 	</collideable>
 	<renderable>
@@ -289,7 +385,7 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>2</value0>
+		<value0>3</value0>
 	</entity>
 	<transform>
 		<position.x>2.0857734680175781</position.x>
@@ -337,12 +433,12 @@
 		<initialTransform.m15>1</initialTransform.m15>
 	</renderable>
 	<entity>
-		<value0>1</value0>
+		<value0>2</value0>
 	</entity>
 	<transform>
-		<position.x>1.2880210876464844</position.x>
+		<position.x>-36.127212524414062</position.x>
 		<position.y>0.100006103515625</position.y>
-		<position.z>-34.742427825927734</position.z>
+		<position.z>-37.039566040039062</position.z>
 		<rotation.x>0</rotation.x>
 		<rotation.y>0</rotation.y>
 		<rotation.z>0</rotation.z>
@@ -355,12 +451,60 @@
 		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
 		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
 		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
-		<worldBoundingBox.min.x>-2.9016790390014648</worldBoundingBox.min.x>
+		<worldBoundingBox.min.x>-40.316913604736328</worldBoundingBox.min.x>
 		<worldBoundingBox.min.y>0.100006103515625</worldBoundingBox.min.y>
-		<worldBoundingBox.min.z>-38.676326751708984</worldBoundingBox.min.z>
-		<worldBoundingBox.max.x>5.4777212142944336</worldBoundingBox.max.x>
+		<worldBoundingBox.min.z>-40.973464965820312</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-31.937511444091797</worldBoundingBox.max.x>
 		<worldBoundingBox.max.y>23.675006866455078</worldBoundingBox.max.y>
-		<worldBoundingBox.max.z>-30.808526992797852</worldBoundingBox.max.z>
+		<worldBoundingBox.max.z>-33.105667114257812</worldBoundingBox.max.z>
+		<collisionLayer>2</collisionLayer>
+	</collideable>
+	<renderable>
+		<modelPath>resources/models/obj/turret.obj</modelPath>
+		<material.path>resources/models/obj/turret_diffuse.png</material.path>
+		<name>Tower Instance</name>
+		<initialTransform.m0>1</initialTransform.m0>
+		<initialTransform.m1>0</initialTransform.m1>
+		<initialTransform.m2>0</initialTransform.m2>
+		<initialTransform.m3>0</initialTransform.m3>
+		<initialTransform.m4>0</initialTransform.m4>
+		<initialTransform.m5>1</initialTransform.m5>
+		<initialTransform.m6>0</initialTransform.m6>
+		<initialTransform.m7>0</initialTransform.m7>
+		<initialTransform.m8>0</initialTransform.m8>
+		<initialTransform.m9>0</initialTransform.m9>
+		<initialTransform.m10>1</initialTransform.m10>
+		<initialTransform.m11>0</initialTransform.m11>
+		<initialTransform.m12>0</initialTransform.m12>
+		<initialTransform.m13>0</initialTransform.m13>
+		<initialTransform.m14>0</initialTransform.m14>
+		<initialTransform.m15>1</initialTransform.m15>
+	</renderable>
+	<entity>
+		<value0>1</value0>
+	</entity>
+	<transform>
+		<position.x>-62.332450866699219</position.x>
+		<position.y>0.1000213623046875</position.y>
+		<position.z>-40.628059387207031</position.z>
+		<rotation.x>0</rotation.x>
+		<rotation.y>0</rotation.y>
+		<rotation.z>0</rotation.z>
+		<scale>1</scale>
+	</transform>
+	<collideable>
+		<localBoundingBox.min.x>-4.1897001266479492</localBoundingBox.min.x>
+		<localBoundingBox.min.y>0</localBoundingBox.min.y>
+		<localBoundingBox.min.z>-3.9339001178741455</localBoundingBox.min.z>
+		<localBoundingBox.max.x>4.1897001266479492</localBoundingBox.max.x>
+		<localBoundingBox.max.y>23.575000762939453</localBoundingBox.max.y>
+		<localBoundingBox.max.z>3.9339001178741455</localBoundingBox.max.z>
+		<worldBoundingBox.min.x>-66.522148132324219</worldBoundingBox.min.x>
+		<worldBoundingBox.min.y>0.1000213623046875</worldBoundingBox.min.y>
+		<worldBoundingBox.min.z>-44.561958312988281</worldBoundingBox.min.z>
+		<worldBoundingBox.max.x>-58.142749786376953</worldBoundingBox.max.x>
+		<worldBoundingBox.max.y>23.675022125244141</worldBoundingBox.max.y>
+		<worldBoundingBox.max.z>-36.694160461425781</worldBoundingBox.max.z>
 		<collisionLayer>2</collisionLayer>
 	</collideable>
 	<renderable>
